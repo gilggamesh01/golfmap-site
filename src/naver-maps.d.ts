@@ -7,5 +7,10 @@ declare namespace naver {
     export class LatLng {
       constructor(lat: number, lng: number);
     }
+    export type EventListener = any;
   }
+}
+
+interface Window {
+  naver: any;
 }
