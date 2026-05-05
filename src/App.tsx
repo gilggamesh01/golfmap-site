@@ -1,3 +1,4 @@
+/// <reference path="./naver-maps.d.ts" />
 import { useState } from 'react';
 import { NavermapsProvider, Container as MapDiv, NaverMap, Marker } from 'react-naver-maps';
 import { regions, golfCourses } from './data';
