@@ -4,6 +4,22 @@ import { regions, golfCourses } from './data';
 import type { Region, GolfCourse } from './data';
 import './App.css';
 
+// src/App.tsx 최상단
+
+/* global naver */
+declare namespace naver {
+  export const maps: any;
+}
+
+// 만약 아래처럼 window 객체에서 직접 꺼내 쓰고 싶다면
+declare global {
+  interface Window {
+    naver: any;
+  }
+}
+
+// ... 이후 나머지 코드
+
 // TODO: Replace with your actual Client ID from Naver Cloud Platform
 const NAVER_CLIENT_ID = 'rdk420up6i'; 
 
