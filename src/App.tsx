@@ -5,7 +5,7 @@ import type { Region, GolfCourse } from './data';
 import './App.css';
 
 // TODO: Replace with your actual Client ID from Naver Cloud Platform
-const NAVER_CLIENT_ID = ''; 
+const NAVER_CLIENT_ID = 'rdk420up6i'; 
 
 function App() {
   const [selectedRegion, setSelectedRegion] = useState<Region>(regions[0]);
