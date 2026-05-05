@@ -4,6 +4,13 @@ import { regions, golfCourses } from './data';
 import type { Region, GolfCourse } from './data';
 import './App.css';
 
+declare global {
+  interface Window {
+    naver: any;
+  }
+}
+const { naver } = window;
+
 // TODO: Replace with your actual Client ID from Naver Cloud Platform
 const NAVER_CLIENT_ID = 'rdk420up6i'; 
 
